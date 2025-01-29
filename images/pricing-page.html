@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pricing-page</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+      .first-container {
+        margin-bottom: 20px;
+      }
+      .title {
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .subtitle {
+        text-align: center;
+        font-size: 16px;
+        color: rgb(122, 122, 122);
+      }
+      .period-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .period {
+        align-items: center;
+        display: flex;
+        font-size: 16px;
+        color: rgb(122, 122, 122);
+      }
+      .division {
+        background-color: rgb(255, 255, 255);
+        padding: 30px 30px;
+        width: 230px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border: 2px solid;
+        transition: background-color 0.4s, border-color 0.4s, transform 0.4s;
+        height:450px;
+      }
+      .title2 {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .subtitle2,
+      .subtitle3 {
+        font-size: 13.5px;
+        color: rgb(30, 21, 21);
+        margin-bottom: 20px;
+      }
+      .price {
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 5px;
+      }
+      button {
+        width: 200px;
+        height: 40px;
+        background-color: black;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        padding: 0px 2px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        transition:opacity 0.3s;
+      }
+      ul {
+        margin-left: -25px;
+        margin-bottom: 30px;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        padding-bottom: 15px;
+        margin-top: 20px;
+      }
+      li {
+        margin-bottom: 15px;
+        color: rgb(10, 10, 10);
+        font-family: "Times New Roman", Times, serif;
+        font-size: 18px;
+      }
+      .second-list {
+        border: none;
+      }
+      .division:hover {
+        background-color: rgb(47, 253, 95);
+        border-color: rgb(47, 253, 95);
+        transform: scale(1.05);
+      }
+      .container {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 100px;
+      }
+      button:active {
+        opacity:0.6
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first-container">
+      <div class="title">Ready to start with <br />Watermelon?</div>
+      <div class="subtitle">Choose the package that suits you</div>
+      <div class="period-container">
+        <div class="period">
+          Monthly <input type="checkbox" name="period" checked/>
+          <input type="checkbox" name="period"  /> Yearly
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!--1-->
+      <div class="division">
+        <div class="title2">Forever Free</div>
+        <div class="subtitle2">Forever free</div>
+        <div class="price">$0</div>
+        <div class="subtitle3">Per agent per month</div>
+        <button>Create a free account</button>
+        <div class="list-container">
+          <ul>
+            <li class="list"><strong>250</strong> conversation p/m</li>
+            <li class="list"><strong>2</strong> voice channels</li>
+            <li class="list"><strong>1</strong> GB data storage</li>
+          </ul>
+        </div>
+        <div class="list-container">
+          <ul class="second-list">
+            <li class="list">Chat widget</li>
+            <li class="list">Realtime overview</li>
+            <li class="list">Watermelon Academy</li>
+          </ul>
+        </div>
+      </div>
+      <div class="division">
+        <div class="title2">Essentials</div>
+        <div class="subtitle2">For the basic</div>
+        <div class="price">$49</div>
+        <div class="subtitle3">Per agent per month</div>
+        <button>Request demo</button>
+        <div class="list-container">
+          <ul>
+            <li class="list"><strong>250</strong> conversation p/m</li>
+            <li class="list"><strong>2</strong> voice channels</li>
+            <li class="list"><strong>1</strong> GB data storage</li>
+          </ul>
+        </div>
+        <div class="list-container">
+          <ul class="second-list">
+            <li class="list">Chat widget</li>
+            <li class="list">Realtime overview</li>
+            <li class="list">Watermelon Academy</li>
+          </ul>
+        </div>
+      </div>
+      <div class="division">
+        <div class="title2">Team</div>
+        <div class="subtitle2">For small teams</div>
+        <div class="price">$89</div>
+        <div class="subtitle3">Per agent per month</div>
+        <button>Request demo</button>
+        <div class="list-container">
+          <ul>
+            <li class="list"><strong>250</strong> conversation p/m</li>
+            <li class="list"><strong>2</strong> voice channels</li>
+            <li class="list"><strong>1</strong> GB data storage</li>
+          </ul>
+        </div>
+        <div class="list-container">
+          <ul class="second-list">
+            <li class="list">Chat widget</li>
+            <li class="list">Realtime overview</li>
+            <li class="list">Watermelon Academy</li>
+          </ul>
+        </div>
+      </div>
+      <div class="division">
+        <div class="title2">Professional</div>
+        <div class="subtitle2">For the professionals</div>
+        <div class="price">$129</div>
+        <div class="subtitle3">Per agent per month</div>
+        <button>Request demo</button>
+        <div class="list-container">
+          <ul>
+            <li class="list"><strong>250</strong> conversation p/m</li>
+            <li class="list"><strong>2</strong> voice channels</li>
+            <li class="list"><strong>1</strong> GB data storage</li>
+          </ul>
+        </div>
+        <div class="list-container">
+          <ul class="second-list">
+            <li class="list">Chat widget</li>
+            <li class="list">Realtime overview</li>
+            <li class="list">Watermelon Academy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
